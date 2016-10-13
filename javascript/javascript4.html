@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>javascript 3</title>
+    </head>
+        <body>
+         
+            
+            <p>how many finger i have ?</p>
+            <p><input type=text id="how"> 
+                <button id="check">Guss</button></p>
+            
+            <script type="text/javascript">
+            
+            
+       document.getElementById("check").onclick = function() {
+                
+                var number = Math.random();
+                number = number * 6;
+                number = Math.floor(number);
+            if ( number == document.getElementById("how").value ){
+                
+                alert("very Good");
+            }    else {
+                
+                alert("try again! the number was " + number);
+            }
+            
+                
+            }
+            
+            
+            
+            </script>
+            
+            
+                    </body>
+
+</html>

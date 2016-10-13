@@ -1,0 +1,43 @@
+ float: right;
+<html>
+
+<title>CSS</title>
+
+    iline 
+
+<p style="color:red"> this is red text</p>
+    
+
+    <head>
+    <style type="text/css"
+           
+           p {
+           
+            color:red;
+           
+           }
+           
+// to include class
+           
+           .red {
+           
+           color:red;
+           }
+  
+           #red {
+           
+           color:red;
+           
+           }
+           
+           
+           ></style>
+    </head>
+    
+    <p class="red">
+    this is text 
+    </p>
+    
+    <p id="red">this's example of ID</p>
+    
+    <p class="red"> this without style .... <span class="red">this with style </span></p>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>javascript</title>
+    </head>
+    <body>
+
+        <p id="text">Hello World</p>
+        
+        <button id="mybutton">Change Text</button>
+        
+        <p id="2nd">JavaScript is ....</p>
+        
+        <button id="2ndbutton">Append text</button>
+        
+        <script type="application/javascript">
+        
+        
+        document.getElementById("mybutton").onclick = function() {
+            
+            document.getElementById("text").innerHTML = "Hello Rob!";
+            
+        } 
+        
+        </script>
+            <script type="application/javascript">
+
+
+            document.getElementById("2ndbutton").onclick = function() {
+
+            document.getElementById("2nd").innerHTML = "i think "  + document.getElementById("2nd").innerHTML + "awsome"
+
+            } 
+
+        </script>
+        
+        
+        
+        <p id="empty"></p>
+        <button id="create">create text</button>
+        
+        <script type="application/javascript">
+        
+        
+        document.getElementById("create").onclick = function() {
+            
+            document.getElementById("empty").innerHTML = "<h1>Hello</h1>";
+            
+        }
+        </script>
+    </body>
+</html>

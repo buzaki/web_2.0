@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>javascript</title>
+    </head>
+    
+    <style type="text/css">
+    
+        #shape {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: none;
+        }
+    </style>
+
+<body>
+    <div id="shape"></div>
+    
+    <p>your time <span id="timedone"></span></p>
+    
+    <script type="text/javascript">
+    
+        start = new Date().getTime();
+          
+        
+                    function makeShapeAppear() {
+                        
+                        document.getElementById("shape").style.display = "block";
+                        start = new Date().getTime();
+              
+                        }
+        
+                    function appearAfterDelay() {
+                
+                        setTimeout(makeShapeAppear, Math.random() * 2000);
+                
+                    }
+        
+        appearAfterDelay();
+        
+                document.getElementById("shape").onclick = function() {
+                document.getElementById("shape").style.display = "none";
+                var end = new Date().getTime();
+                var timetaken = (end - start) / 1000;
+             document.getElementById("timedone").innerHTML = timetaken + "s";
+                
+                    appearAfterDelay();
+            
+        }
+        
+
+    </script>
+    
+ 
+    
+    </body>
+
+</html>

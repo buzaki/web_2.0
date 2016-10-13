@@ -1,0 +1,151 @@
+<html>
+<head>
+    
+    <title>RegEx 2</title></head>
+    <script src="jquery.min.js"></script> 
+    <script src="jquery-ui.js"></script> 
+    	<link href="jquery-ui.css" rel="stylesheet">
+
+        <style type="text/css">
+            #notes {margin-top: 600; }
+
+            body {
+                
+                font-family: sans-serif;
+                font-size: 130%
+            }
+            
+            input {
+                
+                padding: 5px 5px 12px 5px;
+                font-size: 25px;
+                border-radius: 5px;
+                border: 1px solid grey;
+                width: 320px;
+                
+            }
+            
+            label {
+                
+                position: relative;
+                top:  12px;
+                width: 200px;
+                float: left;
+            }
+            
+            
+            #wrapper {
+                
+                width: 550px;
+                margin: 0 auto;
+                
+            }
+            
+            .element {
+                
+                margin-bottom: 10px;
+            }
+            
+            #sumbitb {
+                
+                width: 130px;
+                margin-left: 230px;
+                padding: 10px;
+                margin-top: 10px;
+                
+                
+            }
+        </style>
+       
+    
+    <body>
+        
+        
+
+        <div id="wrapper">
+        
+            <div class="element">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="eg . yourname@gmail.com">
+            </div>
+            
+            <div class="element">
+ <label for="mobile">Mobile</label>
+ <input type="text" name="mobile" id="mobile" placeholder="eg . 123456789">
+            </div>
+        
+            <div class="element">
+                 <label for="password">password</label>
+ <input type="password" name="password" id="password" >
+            </div>
+            
+         <div class="element">
+         <label for="password2">password confrim</label>
+ <input type="password" name="password2" id="password2" >
+            </div>
+            
+            
+            <div class="element">
+              
+            <input type="submit" id="sumbitb" value="Sign Up">
+            
+            </div>
+        </div>
+    
+    <script type="text/javascript">
+            function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                
+      return regex.test(email);
+            };
+
+        var errorm = "";
+        var missing = "";
+        
+        if ($("#email").val() == "") {
+            
+            missing += "email is missing";
+        }
+        
+            $("#sumbitb").click(function(){
+
+                if (isEmail($("#email").val()) == false ) {
+                    
+                errorm += "<p>invalid email</p>";
+                    
+                }
+                
+           if ($.isNumeric($("#mobile").val())  == false) {
+                        
+                errorm += "mobile is not number";
+                    }
+                
+                
+        if  ( $("#password").val() != $("#password2").val()) {
+                  
+                  errorm += " password not match";
+            errorm = errorm + missing;
+            alert(errorm);
+              }
+                
+                
+            });
+            
+        
+        </script>
+          <div id="notes">
+    // regeral expresion        <br>
+    /string/                    <br>
+    g for Global                <br>
+    i for insensitive search    <br>
+</div>
+    </body>
+
+    
+    
+    
+    
+    
+    
+
+</html>

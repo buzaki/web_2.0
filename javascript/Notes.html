@@ -1,0 +1,54 @@
+<html>
+    <head>
+        
+        
+                <p id="text">Hello World</p>
+                <button id="click">Change Text</button>
+                <button id="red">Change color</button>
+                <button id="font">Change font-size</button>
+                <button id="disapper">disapper</button>
+
+        
+        <script type="application/javascript">
+            
+                // change text
+                document.getElementById("click").onclick = function() {
+                document.getElementById("text").innerHTML = "Hello Rob!";
+                }
+
+            
+            
+                // change color to red 
+                document.getElementById("red").onclick = function() {
+                document.getElementById("text").style.color = "red";
+                }
+
+            
+            
+                // change fontSize
+                document.getElementById("font").onclick = function() {
+                document.getElementById("text").style.fontSize = "30px";    
+                }
+                
+                
+                // remove from page
+                document.getElementById("disapper").onclick = function() {
+                document.getElementById("text").style.display = "none";
+                }
+            
+        </script>
+        
+       
+        
+    </head>
+    <body>
+
+       
+         
+        
+        
+
+
+        
+           </body>
+</html>

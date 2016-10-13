@@ -1,0 +1,77 @@
+<html>
+<head>
+    
+    <title>jQuery </title></head>
+    <script src="jquery.min.js"></script> 
+        <style type="text/css">
+            #circle {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+            }
+
+            .square {
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                margin: 10px;
+            }
+
+
+
+
+
+        </style>
+            <div id="test">Testing Mode</div>
+
+                <script type="text/javascript">
+
+                if(typeof jQuery == "undefined") {
+
+                    document.getElementById("test").style.color = "red";
+                }else
+                    document.getElementById("test").style.color = "green";
+                </script>
+
+    
+    <div id="circle"></div>
+    <p>Welcome .... </p>
+            <script type="text/javascript">
+                
+                $("#circle").hover(function(){
+                    
+                   $("p").html("Welcome to the Real World Neo :) ");
+                    
+
+                     
+                });
+
+                /*
+                .click(function(){
+                    
+                })
+                $("div").click
+                $("div").onclick
+                $("div").hover
+                $("div").attr("id", "new_id")
+*/
+
+            </script>
+
+    <body>
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+</html>
