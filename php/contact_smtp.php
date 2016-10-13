@@ -109,7 +109,7 @@ $SmtpPass="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
         
         if($_SERVER["REQUEST_METHOD"] == "POST")
             {
-$to = 'admin@id3m.net';
+$to = $_POST['toemail'];
 $from = $_POST['email'];
 $subject = $_POST['subject'];
 $body = $_POST['content'];
@@ -158,9 +158,14 @@ $SMTPChat = $SMTPMail->SendMail();
 
 
       <div class="form-group">
-        <label for="email">Email address</label>
+        <label for="email">From Email address</label>
         <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        
+          
+             <label for="toemail">To Email address</label>
+        <input type="email" name="toemail" class="form-control" id="toemail" aria-describedby="emailHelp" placeholder="Enter email">
+          
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
 
 
