@@ -199,7 +199,6 @@ $SMTPChat = $SMTPMail->SendMail();
 
 $("form").submit(function (e) {
     
-      e.preventDefault()
     
     var error = "";
     
@@ -225,10 +224,11 @@ $("form").submit(function (e) {
     if (error != "") {
         
         $("#error_div").html('<div class="alert alert-danger" role="alert"><strong><p>Faild is Missing :</strong><br>' + error + '</p></div>');
+        
+        return false;
     } else {
         
-               $("form").unbind('submit').submit();
-        
+return true;        
     }
         
 
