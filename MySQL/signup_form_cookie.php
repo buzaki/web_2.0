@@ -1,4 +1,8 @@
 <?php
+// setcookie($var, Value, EXPIRED_TIME)
+setcookie("user",$_POST["email"],time()+30);
+
+
 
     if (array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)) {
 
@@ -41,7 +45,8 @@
 
                 if (mysqli_query($link, $query)) {
 
-                    $success = "You have been registerd";
+                    $_COOKIE['user'] = $email;
+                    header("Location: cookie.php");
 
                 } else {
 

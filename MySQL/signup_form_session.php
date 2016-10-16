@@ -1,5 +1,6 @@
 <?php
 
+session_start();
     if (array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)) {
 
         $link = mysqli_connect("localhost","admin","admin","admin");
@@ -41,7 +42,9 @@
 
                 if (mysqli_query($link, $query)) {
 
-                    $success = "You have been registerd";
+                    $_SESSION['email'] = $email;
+                    header("Location: session.php");
+
 
                 } else {
 
