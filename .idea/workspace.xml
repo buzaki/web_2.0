@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc382d5-ea1f-464b-8075-e7b08409aa59" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/vksood.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/API/google_map.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/API/weather_API.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MySQL/sign.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/weather-scraper.php" afterPath="$PROJECT_DIR$/php/weather-scraper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/weather-scraper2.php" afterPath="$PROJECT_DIR$/php/weather-scraper2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/weather_API.php" afterPath="$PROJECT_DIR$/API/weather_API.php" />
     </list>
     <ignored path="web_2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,21 +43,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weather_API.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="weather_API.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API/weather_API.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1471">
-              <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="2420">
+              <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+              <folding>
+                <marker date="1476862213000" expanded="true" signature="854:2102" ph="..." />
+                <marker date="1476862213000" expanded="true" signature="863:2032" ph="..." />
+                <marker date="1476862213000" expanded="true" signature="1247:2015" ph="..." />
+                <marker date="1476862213000" expanded="true" signature="1267:1498" ph="{...}" />
+                <marker date="1476862213000" expanded="true" signature="1523:1614" ph="{...}" />
+                <marker date="1476862213000" expanded="true" signature="1647:1785" ph="{...}" />
+                <marker date="1476862213000" expanded="true" signature="1813:1886" ph="{...}" />
+                <marker date="1476862213000" expanded="true" signature="1917:1991" ph="{...}" />
+                <marker date="1476862213000" expanded="true" signature="2041:2102" ph="..." />
+                <marker date="1476862213000" expanded="true" signature="2076:2102" ph="..." />
+                <marker date="1476862213000" expanded="true" signature="2676:2799" ph="..." />
+                <marker date="1476862213000" expanded="true" signature="2987:3007" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sign.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MySQL/sign.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-560">
-              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+            <state relative-caret-position="90">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -99,12 +104,12 @@
         <option value="$PROJECT_DIR$/API/7.13.php" />
         <option value="$PROJECT_DIR$/API/weather_from_url.php" />
         <option value="$PROJECT_DIR$/php/weather-scraper2.php" />
-        <option value="$PROJECT_DIR$/API/weather_API.php" />
         <option value="$PROJECT_DIR$/API/google_map.php" />
         <option value="$PROJECT_DIR$/php/weather-scraper.php" />
         <option value="$PROJECT_DIR$/php/google_map_text.php" />
         <option value="$PROJECT_DIR$/API/google_map_text.php" />
         <option value="$PROJECT_DIR$/MySQL/sign.php" />
+        <option value="$PROJECT_DIR$/API/weather_API.php" />
       </list>
     </option>
   </component>
@@ -319,11 +324,12 @@
       <workItem from="1476772590730" duration="9563000" />
       <workItem from="1476790518559" duration="1280000" />
       <workItem from="1476798293362" duration="349000" />
+      <workItem from="1476862025660" duration="188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21214000" />
+    <option name="totallyTimeSpent" value="21402000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,6 +379,51 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/API/google_map_text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/google_map.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/weather_API.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+          <folding>
+            <marker date="1476862213000" expanded="true" signature="854:2102" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="863:2032" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="1247:2015" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="1267:1498" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="1523:1614" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="1647:1785" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="1813:1886" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="1917:1991" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="2041:2102" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="2076:2102" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="2676:2799" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="2987:3007" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySQL/sign.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API/google_map_text.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -541,19 +592,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API/weather_API.php">
+    <entry file="file://$PROJECT_DIR$/MySQL/sign.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1471">
-          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+        <state relative-caret-position="90">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySQL/sign.php">
+    <entry file="file://$PROJECT_DIR$/API/weather_API.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-560">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="2420">
+          <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+          <folding>
+            <marker date="1476862213000" expanded="true" signature="854:2102" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="863:2032" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="1247:2015" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="1267:1498" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="1523:1614" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="1647:1785" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="1813:1886" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="1917:1991" ph="{...}" />
+            <marker date="1476862213000" expanded="true" signature="2041:2102" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="2076:2102" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="2676:2799" ph="..." />
+            <marker date="1476862213000" expanded="true" signature="2987:3007" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
