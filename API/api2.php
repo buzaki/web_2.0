@@ -12,21 +12,33 @@ $content = $connection->get("account/verify_credentials");
 // grep tweets
 $tweets = $statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
 
-//$kos = $_POST['tweet'];
-//$statues = $connection->post("statuses/update", ["status" => $kos]);
+//$statues = $connection->post("statuses/update", ["status" => $post_tweet]);
 
 
 
 
 
+echo "<h1><center>Twitter API</h1>";
+foreach ($tweets as $tweet) {
 
 
+    if ($tweet->favorite_count >= '2'){
+
+        $statuss = $connection->get("statuses/oembed", ["id" =>  $tweet->id]);
+
+        echo '<div class="container">'.$statuss->html.'</div>';
+
+
+    }
+
+
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Postcode Finder</title>
+    <title>Twitter API</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -81,20 +93,7 @@ $tweets = $statuses = $connection->get("statuses/home_timeline", ["count" => 25,
     <div id="msg">
         <?php
 
-        foreach ($tweets as $tweet) {
 
-
-            if ($tweet->favorite_count >= '2'){
-
-                $statuss = $connection->get("statuses/oembed", ["id" =>  $tweet->id]);
-
-                $post =  $statuss->html;
-
-
-            }
-
-
-        }
 
         ?>
 
