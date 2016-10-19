@@ -18,18 +18,7 @@ $tweets = $statuses = $connection->get("statuses/home_timeline", ["count" => 25,
 
 
 
-foreach ($tweets as $tweet) {
 
-
-    if ($tweet->favorite_count >= '2'){
-        $statuss = $connection->get("statuses/oembed", ["id" =>  $tweet->id]);
-        //print_r($statuss);
-         $posts = $statuses->html;
-        echo "<br>";
-    }
-
-
-}
 
 
 ?>
@@ -92,8 +81,20 @@ foreach ($tweets as $tweet) {
     <div id="msg">
         <?php
 
-        echo $posts;
+        foreach ($tweets as $tweet) {
 
+
+            if ($tweet->favorite_count >= '2'){
+
+                $statuss = $connection->get("statuses/oembed", ["id" =>  $tweet->id]);
+
+                $post =  $statuss->html;
+
+
+            }
+
+
+        }
 
         ?>
 
