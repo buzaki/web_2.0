@@ -1,17 +1,3 @@
-<?php
-
-include ('auth.php');
-require "twitteroauth/autoload.php";
-use Abraham\TwitterOAuth\TwitterOAuth;
-
-
-$connection = new TwitterOAuth($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
-$content = $connection->get("account/verify_credentials");
-
-print_r($content);
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,13 +12,6 @@ print_r($content);
       
                     <style type="text/css">
 
-                html {
-                #  background: url(bg2.jpg) no-repeat center center fixed;
-                  -webkit-background-size: cover;
-                  -moz-background-size: cover;
-                  -o-background-size: cover;
-                  background-size: cover;
-                }
 
               body {
                 color:black;
@@ -72,7 +51,25 @@ print_r($content);
       </style>
   </head>
   <body>
-      <div class="container"></div>
+      <div class="container">
+    <h1>Postcode Finder</h1>
+      <div id="msg"></div>
+
+     <form action="api.php" method="post">
+  <fieldset class="form-group">
+    <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Enter the partial address to get the postcode">
+  <button class="btn btn-primary" id="find_zip">Find</button>
+         </fieldset>
+</form>
+          
+      </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="../php/jquery.min.js"></script>
+     <script src="../php/bootstrap.min.js"></script>
+    <script src="../php/tether.min.js.1"></script>
+      
+
   </body>
 </html>
 
