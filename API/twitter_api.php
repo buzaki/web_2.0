@@ -1,6 +1,6 @@
 <?php
-require "auth.php";
 
+include ('auth.php');
 require "twitteroauth/autoload.php";
 use Abraham\TwitterOAuth\TwitterOAuth;
 
@@ -8,7 +8,7 @@ use Abraham\TwitterOAuth\TwitterOAuth;
 $connection = new TwitterOAuth($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
 $content = $connection->get("account/verify_credentials");
 
-//print_r($content);
+print_r($content);
 ?>
 
 
