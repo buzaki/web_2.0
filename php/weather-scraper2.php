@@ -7,10 +7,6 @@
 
         $city = str_replace(' ', '', $_GET['city']);
 
-        if(any zeft){
-
-
-        }
 
         $file_headers = @get_headers("http://www.weather-forecast.com/locations/".$city."/forecasts/latest");
 
