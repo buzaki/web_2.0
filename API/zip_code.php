@@ -9,25 +9,61 @@
 
     <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../php/bootstrap.min.css">
-      <style>
-           .container {
       
-            text-align: center;
-            width: 50%;
-      }
-        
-          }
+                    <style type="text/css">
+
+                html {
+                  background: url(bg2.jpg) no-repeat center center fixed;
+                  -webkit-background-size: cover;
+                  -moz-background-size: cover;
+                  -o-background-size: cover;
+                  background-size: cover;
+                }
+
+              body {
+                color:black;
+
+                background: none;
+
+              }
+
+              .container {
+                
+                text-align: center;
+                margin-top: 50px;
+                width: 450px;
+
+              }
+
+              input {
+
+                margin: 20px 0;
+
+              }
+                        h1 {
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+                        
       </style>
   </head>
   <body>
       <div class="container">
     <h1>Postcode Finder</h1>
-      <p>enter the partial address to get the postcode</p>
       <div id="msg"></div>
      <form>
   <fieldset class="form-group">
-    <label for="exampleInputEmail1">address</label>
-    <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Enter partial address">
+    <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Enter the partial address to get the postcode">
     
            
   <button class="btn btn-primary" id="find_zip">Find</button>
