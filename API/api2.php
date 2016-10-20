@@ -17,7 +17,6 @@ $tweets = $statuses = $connection->get("statuses/home_timeline", ["count" => 25,
 
 
 
-
 echo "<h1><center>Twitter API</h1>";
 foreach ($tweets as $tweet) {
 
