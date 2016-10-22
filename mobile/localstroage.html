@@ -1,0 +1,38 @@
+    <html>
+    <title>local stroage</title>
+
+    <body>
+
+    <div id='local'></div>
+
+
+    <script src="appjs/zepto.js"></script>
+
+    <script type="text/javascript">
+
+    if (typeof(Storage) !== "undefined") {
+    //  alert("work");
+    }else {
+    //  alert("not");
+    }
+
+        // local stroage for vars 
+        localStorage.setItem("name", "Zaki");
+        alert(localStorage.getItem("name"));
+        
+        // local stroage for arrays
+        
+        var names = [];
+        names[0] = "New member name?";
+        names[1] = "work work work"
+        localStorage.setItem("names", JSON.stringify(names));
+
+        
+        var storedNames = JSON.parse(localStorage.getItem("names"));
+        
+        alert(storedNames[0]);
+         alert(storedNames[1]);
+
+    </script>
+    </body>
+    </html>
