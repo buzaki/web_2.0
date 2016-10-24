@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>html5_css3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <style>
+        #video {
+            width:800px;
+            display: block;
+            margin:0 auto;
+        }
+        
+        #play {
+            margin:0 auto;
+            float: right;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <video width="640" height="480" controls id=video >
+        <source src="big_buck_bunny.mp4" type="video/mp4">
+        please upgrade your browser
+        
+        
+    </video>
+        <button><h1><span id="play">Play Video</span></h1></button>
+
+    <div>
+    </div>
+    
+    
+    <audio controls>
+    
+    <source type="audio/mpeg" src="syad.mp3">
+    </audio>
+    <script>
+    document.getElementById("play").onclick = function() {
+        
+        if (document.getElementById("video").paused) {
+            
+            document.getElementById("video").play();
+            document.getElementById("play").innerHTML = "Pause Video";
+        }else {
+            
+            document.getElementById("video").pause();
+            document.getElementById("play").innerHTML = "Play Video"
+        }
+
+    }
+    
+    
+    
+    </script>
+</body>
+</html>
+
