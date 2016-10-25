@@ -178,7 +178,7 @@
 				email_to_list.sort();
 				localStorage.setItem("email_to_list", JSON.stringify(email_to_list));
 
-				console.log(email_to_list);
+			//	console.log(email_to_list);
             	}
 
 
@@ -209,7 +209,7 @@
 		if(localStorage.getItem('click_to') !== null) {
 			localStorage.removeItem('click_to');
 		}
-			App.load('sendemail');
+			App.load('sendemail', 'fade');
 
 		});
 			if (localStorage.getItem('email_to_list') !== null){
