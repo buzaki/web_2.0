@@ -6,8 +6,13 @@
       </div>
     </footer>
 
-  
-<!-- Modal -->
+    <script src="https://apps.digivoice.net/inc/js/jquery.min.js"></script>
+    <script src="https://apps.digivoice.net/inc/js/tether.min.js"></script>
+    <script src="https://apps.digivoice.net/inc/bootstrap/bootstrap.min.js"></script>
+    
+
+
+  <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -32,18 +37,12 @@
       </div>
       <div class="modal-footer">
           <a id="toggleLogin">Sign up</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" id="loginSignupButton" class="btn btn-primary">Login</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
- <script src="https://apps.digivoice.net/inc/js/tether.min.js"></script>
-    <script src="https://apps.digivoice.net/inc/js/jquery.min.js"></script>
-    <script src="https://apps.digivoice.net/inc/bootstrap/bootstrap.min.js"></script>
-        <script src="inc.js"></script>
-    </body>
+<script type="text/javascript" src="inc.js"></script>
+  </body>
 </html>

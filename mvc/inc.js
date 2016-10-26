@@ -17,19 +17,25 @@
             
         }
         
-        $("#loginSignupButton").click(function(){
-            $.ajax({
-            type: "POST",
-            url: "action.php?action=loginsignup",
-            data: "email=" + $("#email").val() + "&password=" + $("#password").val() + "&loginActive=" + $("#loginActive").val(),
-            success: function(result) { alert(result) }
-            
-           });
         
-                
-                
-                
-            });
-
+    })
     
-});
+    $("#loginSignupButton").click(function() {
+        
+        $.ajax({
+            type: "POST",
+            url: "actions.php?action=loginSignup",
+            data: "email=" + $("#email").val() + "&password=" + $("#password").val() + "&loginActive=" + $("#loginActive").val(),
+            success: function(result) {
+               alert(result);
+            }
+            
+        })
+        
+        if($("#loginActive").val() == "1"){
+            $("#loginSignupButton").html("Logining")
+        }else {
+            $("#loginSignupButton").html("wait ya 3rs")
+        }
+        
+    })
