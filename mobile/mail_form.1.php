@@ -86,7 +86,7 @@
 
 
 
-    <script src="appjs/zepto.js"></script>
+    <script type="text/javascript" src="https://web2-buzaki.c9users.io/mobile/appjs/zepto.js"></script>
     <script src="appjs/app.min.js"></script>
     <script>
 
@@ -128,7 +128,7 @@
             // sending email functions goes here
     	  $.ajax({
 			  type: 'GET',
-			  url: 'https://apps.digivoice.net/sendmail.php?callback=response',
+			  url: 'http://apps.digivoice.net/sendmail.php?callback=response',
 			  // data to be added to query string:
 			  data: {
 			  	to: $("#email_to").val(),
