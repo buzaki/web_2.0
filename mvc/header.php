@@ -30,8 +30,12 @@
     </li>
   </ul>
   <div class="form-inline float-xs-right">
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Login/Signup
-</button>
+    <?php
+     if($_SESSION['id']) {
+     echo  '<a href="?action=logout" class="btn btn-danger">logout</a>';
+     }else {
+      echo '<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Login/Signup</button>';
+     }
+    ?>
   </div>
 </nav>

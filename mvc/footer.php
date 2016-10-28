@@ -13,7 +13,7 @@
 
 
   <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade container" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -22,6 +22,20 @@
         </button>
         <h4 class="modal-title" id="loginModalTitle">Login</h4>
       </div>
+            <div id="done" class="alert alert-success" role="alert">
+    <strong>Login Successful!</strong> redircting to your home page.
+    </div>
+    
+    <div id="error" class="alert alert-danger" role="alert">
+    <strong>candidate error</strong> unable to verfiy your logins.
+    </div>
+    
+    <div id="registerd" class="alert alert-warning" role="alert">
+  <strong>Warning!</strong> the Email is already registerd 
+</div>
+
+
+
       <div class="modal-body">
         <form>
             <input type="hidden" id="loginActive" name="loginActive" value="1">

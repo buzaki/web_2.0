@@ -1,3 +1,7 @@
+    $("#done").hide();
+    $("#error").hide();
+    
+    $("#registerd").hide();
     $("#toggleLogin").click(function() {
         
         if ($("#loginActive").val() == "1") {
@@ -27,15 +31,60 @@
             url: "actions.php?action=loginSignup",
             data: "email=" + $("#email").val() + "&password=" + $("#password").val() + "&loginActive=" + $("#loginActive").val(),
             success: function(result) {
-               alert(result);
+                 //alert(result);    
+            if (result == "1"){
+           
+              $("#error").hide()
+              $("#registerd").hide();
+              
+              $("#done").show()
+            
+             window.location.assign("main.php")  
+        
+            
+            
+            } else if (result == "registerd"){
+             
+             $("#registerd").show();
+              $("#error").hide()
+
+                
+            }else {
+          
+          
+            $("#done").hide()
+            $("#registerd").hide();
+            $("#error").show();
             }
+                
+            }
+         
             
         })
         
-        if($("#loginActive").val() == "1"){
-            $("#loginSignupButton").html("Logining")
-        }else {
-            $("#loginSignupButton").html("wait ya 3rs")
-        }
-        
     })
+    
+// code end
+
+$("#postTweet").click(function() {
+    $.ajax({
+         type: "POST",
+            url: "actions.php?action=postTweet",
+            data: "tweetData=" + $("#tweetContent").val(),
+            success: function(result) {
+                
+            window.location.reload();
+                
+                
+                
+                
+                
+            }
+    })
+})
+
+
+//PHP file my_ajax_receiver.php
+
+
+
