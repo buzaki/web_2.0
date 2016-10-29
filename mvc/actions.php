@@ -111,4 +111,27 @@ if($_GET['action'] == "postTweet") {
   }
   
 }
+
+if($_GET['action'] == "toggleFollow" ){
+    
+  $this_user = $_POST['userid'];
+  $uid = $_SESSION['id'];
+  
+   $unfollow_query = "select * from isfollowing where follower ='$uid' and isfollow = '$this_user' limit 1";
+    $result = mysqli_query($link, $unfollow_query);
+     
+         if(mysqli_num_rows($result) > 0 ){
+             echo "already following";
+          mysqli_query($link, "delete from isfollowing where id =");
+          echo 1;
+     }else {
+    echo "not follower will make you fellow";
+      $following_query = "INSERT INTO isfollowing (follower, isfollow) VALUES ('$uid', '$this_user')";
+      mysqli_query($link,$following_query);
+      echo "2";
+
+     }
+    
+    
+}
 ?>

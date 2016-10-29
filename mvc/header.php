@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://apps.digivoice.net/inc/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="more.css" type="text/css" />
     <style type="text/css">
         

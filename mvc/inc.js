@@ -86,5 +86,17 @@ $("#postTweet").click(function() {
 
 //PHP file my_ajax_receiver.php
 
+$(".toggleFollow").click(function() {
+ 
+  $.ajax({
+         type: "POST",
+            url: "actions.php?action=toggleFollow",
+            data: "userid=" + $(this).attr("data-userid"),
+            success: function(result) {
+alert(result);
+                
+            }
+    })
+})
 
 

@@ -56,10 +56,10 @@ echo "<div id='tweets'><p>".$user['email']." "."<span class='time'>since ".time_
  
    echo "<p>".$row['tweet']."</p>";
    
-   echo "<p>Follow</p></div>";
+   echo "<p><a class='toggleFollow btn btn-info' data-userid='".$uid."'>Follow</a></p></div>";
    
   }
- }
+ } 
  
  
 }

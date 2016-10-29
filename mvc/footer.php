@@ -6,9 +6,9 @@
       </div>
     </footer>
 
-    <script src="https://apps.digivoice.net/inc/js/jquery.min.js"></script>
-    <script src="https://apps.digivoice.net/inc/js/tether.min.js"></script>
-    <script src="https://apps.digivoice.net/inc/bootstrap/bootstrap.min.js"></script>
+<script src="assets/jquery.min.js"></script>
+    <script src="assets/tether.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
     
 
 
