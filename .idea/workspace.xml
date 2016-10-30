@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9895ef19-f4f1-4c34-a800-ef164828dd97" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API/api2.php" afterPath="$PROJECT_DIR$/API/api2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/actions.php" afterPath="$PROJECT_DIR$/mvc/actions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/functions.php" afterPath="$PROJECT_DIR$/mvc/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/header.php" afterPath="$PROJECT_DIR$/mvc/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/inc.js" afterPath="$PROJECT_DIR$/mvc/inc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/main.php" afterPath="$PROJECT_DIR$/mvc/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/mysql.php" afterPath="$PROJECT_DIR$/mvc/mysql.php" />
     </list>
     <ignored path="web_2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,57 +28,78 @@
     <favorites_list name="web_2.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/api.php">
+    <leaf>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mvc/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="57" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="233">
+              <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+              <folding>
+                <marker date="1477822423000" expanded="true" signature="281:327" ph="SELECT * FRO... users" />
+                <marker date="1477822423000" expanded="true" signature="860:908" ph="select * fro... isfollowing" />
+                <marker date="1477822423000" expanded="true" signature="1372:1392" ph="select * fro... tweets" />
+                <marker date="1477822423000" expanded="true" signature="1372:1441" ph="select * fro... tweets" />
+                <marker date="1477822423000" expanded="true" signature="1666:1710" ph="select * fro... users" />
+                <marker date="1477822423000" expanded="true" signature="2875:3070" ph="..." />
+                <marker date="1477822423000" expanded="true" signature="2902:3002" ph="..." />
+                <marker date="1477822423000" expanded="true" signature="3159:3345" ph="..." />
+                <marker date="1477822423000" expanded="true" signature="3186:3260" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/api2.php">
+      <file leaf-file-name="actions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/actions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="759">
+              <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <folding>
+                <marker date="1477772026000" expanded="true" signature="309:350" ph="SELECT * FRO... users" />
+                <marker date="1477772026000" expanded="true" signature="756:864" ph="INSERT INTO users... " />
+                <marker date="1477772026000" expanded="true" signature="1932:2008" ph="INSERT INTO tweets... " />
+                <marker date="1477772026000" expanded="true" signature="2359:2443" ph="select * fro... isfollowing" />
+                <marker date="1477772026000" expanded="true" signature="2676:2768" ph="delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
               <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <marker date="1476904849000" expanded="true" signature="719:720" ph="..." />
-                <marker date="1476904849000" expanded="true" signature="794:2243" ph="..." />
-                <marker date="1476904849000" expanded="true" signature="801:1903" ph="..." />
-                <marker date="1476904849000" expanded="true" signature="1175:1895" ph="..." />
-                <marker date="1476904849000" expanded="true" signature="1192:1260" ph="{...}" />
-                <marker date="1476904849000" expanded="true" signature="1281:1382" ph="{...}" />
-                <marker date="1476904849000" expanded="true" signature="1398:1439" ph="{...}" />
-                <marker date="1476904849000" expanded="true" signature="1451:1882" ph="{...}" />
-                <marker date="1476904849000" expanded="true" signature="1910:2235" ph="..." />
-                <marker date="1476904849000" expanded="true" signature="1934:2029" ph="..." />
-                <marker date="1476904849000" expanded="true" signature="1978:2020" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weather_API.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/weather_API.php">
+      <file leaf-file-name="timeline.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/timeline.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
-              <folding>
-                <marker date="1476863614000" expanded="true" signature="3094:3317" ph="..." />
-                <marker date="1476863614000" expanded="true" signature="3435:3489" ph="..." />
-              </folding>
+            <state relative-caret-position="176">
+              <caret line="8" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/auth.php">
+      <file leaf-file-name="meri.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/meri.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="45">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -92,6 +118,13 @@
         <option value="$PROJECT_DIR$/API/twitter_api.php" />
         <option value="$PROJECT_DIR$/API/api.php" />
         <option value="$PROJECT_DIR$/API/api2.php" />
+        <option value="$PROJECT_DIR$/mvc/inc.js" />
+        <option value="$PROJECT_DIR$/mvc/actions.php" />
+        <option value="$PROJECT_DIR$/mvc/timeline.php" />
+        <option value="$PROJECT_DIR$/mvc/meri.php" />
+        <option value="$PROJECT_DIR$/mvc/main.php" />
+        <option value="$PROJECT_DIR$/mvc/header.php" />
+        <option value="$PROJECT_DIR$/mvc/functions.php" />
       </list>
     </option>
   </component>
@@ -101,11 +134,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="966" />
-    <option name="height" value="792" />
+    <option name="width" value="1583" />
+    <option name="height" value="971" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -114,7 +150,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -132,6 +168,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -160,14 +198,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="mvc" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,6 +261,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9895ef19-f4f1-4c34-a800-ef164828dd97" name="Default" comment="" />
@@ -235,17 +274,21 @@
       <workItem from="1476879373578" duration="949000" />
       <workItem from="1476893793054" duration="559000" />
       <workItem from="1476896848848" duration="3617000" />
+      <workItem from="1477733326600" duration="33000" />
+      <workItem from="1477733411968" duration="3640000" />
+      <workItem from="1477739975554" duration="7646000" />
+      <workItem from="1477771873474" duration="2336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5125000" />
+    <option name="totallyTimeSpent" value="18780000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="966" height="792" extended-state="0" />
+    <frame x="0" y="22" width="1583" height="971" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19029851" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18908381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26767093" sideWeight="0.5028653" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -280,125 +323,292 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/twitter_api.php">
+    <entry file="file://$PROJECT_DIR$/mvc/actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2190">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+          <folding>
+            <marker date="1477772026000" expanded="true" signature="309:350" ph="SELECT * FRO... users" />
+            <marker date="1477772026000" expanded="true" signature="756:864" ph="INSERT INTO users... " />
+            <marker date="1477772026000" expanded="true" signature="1932:2008" ph="INSERT INTO tweets... " />
+            <marker date="1477772026000" expanded="true" signature="2359:2443" ph="select * fro... isfollowing" />
+            <marker date="1477772026000" expanded="true" signature="2676:2768" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/inc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/timeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1477822423000" expanded="true" signature="281:327" ph="SELECT * FRO... users" />
+            <marker date="1477822423000" expanded="true" signature="860:908" ph="select * fro... isfollowing" />
+            <marker date="1477822423000" expanded="true" signature="1372:1392" ph="select * fro... tweets" />
+            <marker date="1477822423000" expanded="true" signature="1372:1441" ph="select * fro... tweets" />
+            <marker date="1477822423000" expanded="true" signature="1666:1710" ph="select * fro... users" />
+            <marker date="1477822423000" expanded="true" signature="2875:3070" ph="..." />
+            <marker date="1477822423000" expanded="true" signature="2902:3002" ph="..." />
+            <marker date="1477822423000" expanded="true" signature="3159:3345" ph="..." />
+            <marker date="1477822423000" expanded="true" signature="3186:3260" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/api2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/weather_API.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1477772026000" expanded="true" signature="309:350" ph="SELECT * FRO... users" />
+            <marker date="1477772026000" expanded="true" signature="756:864" ph="INSERT INTO users... " />
+            <marker date="1477772026000" expanded="true" signature="1932:2008" ph="INSERT INTO tweets... " />
+            <marker date="1477772026000" expanded="true" signature="2359:2443" ph="select * fro... isfollowing" />
+            <marker date="1477772026000" expanded="true" signature="2676:2768" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/api2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/twitter_api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api.php">
+    <entry file="file://$PROJECT_DIR$/API/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api2.php">
+    <entry file="file://$PROJECT_DIR$/API/api2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <marker date="1476904849000" expanded="true" signature="719:720" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="794:2243" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="801:1903" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="1175:1895" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="1192:1260" ph="{...}" />
-            <marker date="1476904849000" expanded="true" signature="1281:1382" ph="{...}" />
-            <marker date="1476904849000" expanded="true" signature="1398:1439" ph="{...}" />
-            <marker date="1476904849000" expanded="true" signature="1451:1882" ph="{...}" />
-            <marker date="1476904849000" expanded="true" signature="1910:2235" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="1934:2029" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="1978:2020" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/auth.php">
+    <entry file="file://$PROJECT_DIR$/API/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/twitter_api.php">
+    <entry file="file://$PROJECT_DIR$/API/twitter_api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/auth.php">
+    <entry file="file://$PROJECT_DIR$/API/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/tweet_api2.php">
+    <entry file="file://$PROJECT_DIR$/API/tweet_api2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/twitter_api.php">
+    <entry file="file://$PROJECT_DIR$/API/twitter_api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api.php">
+    <entry file="file://$PROJECT_DIR$/API/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
+        <state relative-caret-position="855">
           <caret line="57" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/api2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/weather_API.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/inc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api2.php">
+    <entry file="file://$PROJECT_DIR$/mvc/actions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="759">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding>
-            <marker date="1476904849000" expanded="true" signature="719:720" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="794:2243" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="801:1903" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="1175:1895" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="1192:1260" ph="{...}" />
-            <marker date="1476904849000" expanded="true" signature="1281:1382" ph="{...}" />
-            <marker date="1476904849000" expanded="true" signature="1398:1439" ph="{...}" />
-            <marker date="1476904849000" expanded="true" signature="1451:1882" ph="{...}" />
-            <marker date="1476904849000" expanded="true" signature="1910:2235" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="1934:2029" ph="..." />
-            <marker date="1476904849000" expanded="true" signature="1978:2020" ph="..." />
+            <marker date="1477772026000" expanded="true" signature="309:350" ph="SELECT * FRO... users" />
+            <marker date="1477772026000" expanded="true" signature="756:864" ph="INSERT INTO users... " />
+            <marker date="1477772026000" expanded="true" signature="1932:2008" ph="INSERT INTO tweets... " />
+            <marker date="1477772026000" expanded="true" signature="2359:2443" ph="select * fro... isfollowing" />
+            <marker date="1477772026000" expanded="true" signature="2676:2768" ph="delete from " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/weather_API.php">
+    <entry file="file://$PROJECT_DIR$/mvc/meri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        <state relative-caret-position="45">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/timeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
           <folding>
-            <marker date="1476863614000" expanded="true" signature="3094:3317" ph="..." />
-            <marker date="1476863614000" expanded="true" signature="3435:3489" ph="..." />
+            <marker date="1477822423000" expanded="true" signature="281:327" ph="SELECT * FRO... users" />
+            <marker date="1477822423000" expanded="true" signature="860:908" ph="select * fro... isfollowing" />
+            <marker date="1477822423000" expanded="true" signature="1372:1392" ph="select * fro... tweets" />
+            <marker date="1477822423000" expanded="true" signature="1372:1441" ph="select * fro... tweets" />
+            <marker date="1477822423000" expanded="true" signature="1666:1710" ph="select * fro... users" />
+            <marker date="1477822423000" expanded="true" signature="2875:3070" ph="..." />
+            <marker date="1477822423000" expanded="true" signature="2902:3002" ph="..." />
+            <marker date="1477822423000" expanded="true" signature="3159:3345" ph="..." />
+            <marker date="1477822423000" expanded="true" signature="3186:3260" ph="..." />
           </folding>
         </state>
       </provider>

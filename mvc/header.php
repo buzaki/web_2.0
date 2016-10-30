@@ -17,13 +17,13 @@
           <!-- navbar -->
       
       <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="#">Twitter</a>
+  <a class="navbar-brand" href="?">Twitter</a>
   <ul class="nav navbar-nav">
     <li class="nav-item active">
-      <a class="nav-link" href="#">My Timeline <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="?page=timeline">My Timeline <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Posts</a>
+      <a class="nav-link" href="?page=meri">Posts</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Users-list</a>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$link = mysqli_connect("localhost","root","","c9");
+$link = mysqli_connect("localhost","root","root","c9");
 if (mysqli_connect_errno()) {
     echo "mysql connection error";
     exit();
@@ -23,6 +23,16 @@ if ($_GET['action'] == "logout"){
  session_unset();
 }
 
+
+
+
+
+
+
+
+
+
+
 function displayTweets($mode){
  
  global $link;
@@ -30,17 +40,52 @@ function displayTweets($mode){
  if($mode == 'public'){
   
   $wherecase ="";
+ }elseif ($mode == 'isFollowing'){
+
+
+     $wherecase ="";
+
+     $this_user = $_POST['userid'];
+     $uid = $_SESSION['id'];
+     $isFollowing = "select * from isfollowing where follower ='$uid'";
+     $result = mysqli_query($link, $isFollowing);
+
+
+         while ($row = mysqli_fetch_assoc($result)){
+
+             $uidf = $row['isfollow'];
+             if($wherecase == "") $wherecase = "WHERE";
+             else $wherecase.= " OR";
+             $wherecase.= " uid='$uidf'";
+         }
+
+
+
+ }elseif ($mode == 'meri'){
+     echo " meri dewii";
+
+     $wherecase ="";
+
+     $uid = $_SESSION['id'];
+
+     $wherecase = "WHERE uid='$uid'";
+
+
  }
+
+
  
  
- 
- $query = "select * from tweets order  by `datetime` DESC LIMIT 10";
+ $query = "select * from tweets ".$wherecase."order  by `datetime` DESC LIMIT 10";
  $result = mysqli_query($link, $query);
  
  
  if(mysqli_num_rows($result) == 0){
   
   echo " there's no tweets";
+
+
+
  }else {
   
   while ($row = mysqli_fetch_assoc($result)) {
