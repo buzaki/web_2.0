@@ -26,7 +26,7 @@
       <a class="nav-link" href="?page=meri">Posts</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Users-list</a>
+      <a class="nav-link" href="?page=active-users">Active-Users</a>
     </li>
   </ul>
   <div class="form-inline float-xs-right">

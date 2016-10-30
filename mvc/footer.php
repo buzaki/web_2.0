@@ -31,7 +31,7 @@
     </div>
     
     <div id="registerd" class="alert alert-warning" role="alert">
-  <strong>Warning!</strong> the Email is already registerd 
+  <strong>Warning!</strong> the Email is already registerd
 </div>
 
 

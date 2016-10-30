@@ -32,6 +32,8 @@ $("#loginSignupButton").click(function() {
     data: "email=" + $("#email").val() + "&password=" + $("#password").val() + "&loginActive=" + $("#loginActive").val(),
     success: function(result) {
       //alert(result);
+
+
       if (result == "1"){
 
         $("#error").hide()
@@ -73,7 +75,8 @@ $("#postTweet").click(function() {
     data: "tweetData=" + $("#tweetContent").val(),
     success: function(result) {
 
-      window.location.reload();
+     //alert(result);
+     window.location.reload();
 
 
 

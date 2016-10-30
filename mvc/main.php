@@ -10,7 +10,15 @@ if($_GET['page'] == "timeline"){
 
     include("meri.php");
 
-    }else
+    }else if($_GET['page'] == "active-users"){
+
+    include("active-users.php");
+
+}else if ($_GET['page'] == "search"){
+
+    include("search.php");
+
+}else
     {
         include("home.php");
     }

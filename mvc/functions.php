@@ -62,7 +62,7 @@ function displayTweets($mode){
 
 
  }elseif ($mode == 'meri'){
-     echo " meri dewii";
+
 
      $wherecase ="";
 
@@ -71,18 +71,46 @@ function displayTweets($mode){
      $wherecase = "WHERE uid='$uid'";
 
 
- }
+ }elseif ($mode == 'active-users'){
+
+$user_query = "SELECT * from users where rank > 1";
+$result = mysqli_query($link,$user_query);
+
+     if(mysqli_num_rows($result) == 0){
+
+         echo " there's no users";
+
+
+
+     }else {
+
+         while ($row = mysqli_fetch_assoc($result)) {
+
+             $user_email = $row['email'];
+             echo '<div class="list-group"><a href="#" class="list-group-item list-group-item-action list-group-item-info">'. $user_email .'</a></div>';
+
+
+         }
+     }
+
+     $wherecase = "WHERE id='0'";
+
+}
 
 
  
  
  $query = "select * from tweets ".$wherecase."order  by `datetime` DESC LIMIT 10";
  $result = mysqli_query($link, $query);
- 
- 
+
  if(mysqli_num_rows($result) == 0){
   
-  echo " there's no tweets";
+        if($_GET['page'] != 'active-users'){
+            echo " there's no tweets";
+        }else {
+
+        }
+
 
 
 
@@ -101,10 +129,26 @@ echo "<div id='tweets'><p>".$user['email']." "."<span class='time'>since ".time_
  
    echo "<p>".$row['tweet']."</p>";
    
-   echo "<p><a class='toggleFollow btn btn-info' data-userid='".$uid."'>Follow</a></p></div>";
+   echo "<p><a class='toggleFollow btn btn-info' data-userid='".$uid."'>";
+
+
+      $isFollowing_check = "select * from isfollowing where follower ='$uid'";
+      $result_Following_check = mysqli_query($link, $isFollowing_check);
+
+      if(mysqli_num_rows($result_Following_check) > 0 ){
+
+          echo "UnFollow";
+      }else {
+          echo "Follow";
+      }
+
+
+
+
+      echo "</a></p></div>";
    
   }
- } 
+ }
  
  
 }
@@ -135,15 +179,14 @@ echo "<div id='tweets'><p>".$user['email']." "."<span class='time'>since ".time_
 
 
 function displaySearch() {
- 
+
  echo '<div class="form-inline">
   <div class="form-group">
-    <input type="text" class="form-control" id="SearchTweets" placeholder="Find Somthing">
+    <input type="hidden" name="page" value="search">
+    <input type="text" class="form-control" name="q" id="SearchTweets" placeholder="Find Somthing">
   </div>
-  
-  <button  class="btn btn-primary">Search Tweets</button>
-</div>
-';
+   <button type="submit" id="search" class="btn btn-primary">search</button>
+</div>';
  
 }
 
@@ -164,6 +207,134 @@ function TweetBox() {
  
 }
 
+
+function tweet_post(){
+global $link;
+$theTweet = $_POST['tweetData'];
+
+if(!$theTweet){
+    echo "you tweet is empty";
+}else if (strlen($theTweet) > 140 ) {
+    echo "your tweet is too long 'Ahmed Mouse ..is that you ?'";
+}else {
+    // post tweet
+
+    $uid = $_SESSION['id'];
+    $count_query ="select rank from users where id='$uid'";
+    $count_result = mysqli_query($link,$count_query);
+    $rows = mysqli_fetch_assoc($count_result);
+    $post_count = $rows['rank'] + 1;
+    $count_str = "UPDATE users SET rank='$post_count' WHERE id='$uid'";
+
+    mysqli_query($link, $count_str);
+
+
+
+
+    $sql = "INSERT INTO tweets (tweet, uid, datetime)VALUES ('$theTweet', '$uid', NOW())";
+
+
+
+
+    if(mysqli_query($link, $sql)){
+        echo "1";
+    }else {
+        // echo "error";
+    }
+
+    // end post tweet
+
+
+}
+
+}
+
+
+
+
+
+
+
+function login_box(){
+
+
+global $link;
+
+
+    // check if user email is already exists
+
+    $in_password = mysqli_real_escape_string($link, $_POST['password']);
+    $email = mysqli_real_escape_string($link, $_POST['email']);
+
+
+    if($_POST['loginActive'] == "0" ) {
+
+        $query = "SELECT * FROM users WHERE email ='$email'";
+        $result = mysqli_query($link, $query);
+
+        if (mysqli_num_rows($result) > 0 ) {
+
+            echo "registerd";
+            // code END
+
+        }else {
+
+
+            // hash new password and insert data to db and register user
+
+            $salt =  bin2hex(openssl_random_pseudo_bytes(4));
+            $hash =  hash(sha256, $in_password);
+            $password_signup = hash('sha256', $salt . $hash);
+            $uid = uniqid();
+            $sql = "INSERT INTO users (id, email, password, passwd)
+      VALUES ('$uid', '$email', '$password_signup', '$salt')";
+
+            if(mysqli_query($link, $sql)){
+                echo "1";
+                $_SESSION['id'] = login($email);
+            }else {
+                $error = "can't register now please try again later";
+            }
+
+
+
+
+        }
+
+    }
+    // register code END
+
+    else {
+
+        // log user IN
+        $sql = "SELECT `passwd`,`password` FROM users where `email`='$email'";
+
+        $result = mysqli_query($link, $sql);
+        $row = mysqli_fetch_array($result);
+
+
+        $db_password = $row['password'];
+
+
+
+        $salt =  $row['passwd'];
+
+
+        $hash =  hash(sha256, $in_password);
+        $password_login = hash('sha256', $salt . $hash);
+
+
+
+
+        if ($password_login == $db_password){
+            echo "1";
+
+            $_SESSION['id'] = login($email);
+        }else {
+            echo "login_error";
+        }
+        // login in END
+    }}
 
 
 ?>
