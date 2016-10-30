@@ -185,7 +185,7 @@ function displaySearch() {
     <input type="hidden" name="page" value="search">
     <input type="text" class="form-control" name="q" id="SearchTweets" placeholder="Find Somthing">
   </div>
-   <button type="submit" id="search" class="btn btn-primary">search</button>
+   <button type="submit" id="search" class="btn btn-primary">search!</button>
 </div>';
  
 }
